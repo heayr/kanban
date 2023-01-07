@@ -10,3 +10,16 @@
 }
 
 
+@media screen and (max-width: 600px) {
+
+    .main {
+    overflow: auto;
+    flex-direction: column;
+    height: 100%;
+    background-color: #0079BF;
+
+
+    }
+    
+}
+

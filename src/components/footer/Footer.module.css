@@ -30,3 +30,11 @@
 .copy {
 	margin-left: auto;
 }
+
+@media screen and (max-width: 600px) {
+
+	.footer {
+		display: none;
+	}
+
+}

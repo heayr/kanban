@@ -14,7 +14,7 @@ const Footer = props => {
 					})}
 			</div>
 			<div className={css.copy}>
-				Created by <a href='' target='_blank' rel='noreferrer'>Yegor Myshinsky 2023</a>
+				Created by <a href='https://github.com/heayr/kanban/tree/master/src' target='_blank' rel='noreferrer'>Yegor Myshinsky 2023</a>
 			</div>
 		</footer>
 	)

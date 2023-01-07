@@ -5,6 +5,10 @@
 
 }
 
+.profile__menu:hover {
+    cursor: pointer;
+}
+
 .profile__menu_wrapper {
     display: flex;
 }
@@ -38,10 +42,17 @@ transition: ease-in-out 1s;
 }
 
 .icon {
+    background-image: url(../../images/Vector.svg);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    margin: 15px 0px 0px 10px ;
 
 }
 
 .isopen {
+    background-image: url(../../images/upVector.svg);
+
 
  }
 

@@ -13,3 +13,19 @@
 	margin-bottom: 30px;
 
 }
+
+@media screen and (max-width: 600px) {
+
+    .board {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0079BF;
+    overflow: auto;
+    height: auto;
+
+    }
+    
+}

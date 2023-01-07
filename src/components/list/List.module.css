@@ -19,9 +19,8 @@
 
 .task {
 	background: #465671;
-	/* color: #fff; */
-	color: #000;
-
+	color: #fff;
+	/* color: #000; */
 	margin: 7px 0;
 	padding: 8px;
 	border-radius: 8px;
@@ -60,4 +59,13 @@
 	color: #737373;
 	cursor: default;
 
+}
+
+
+@media screen and (max-width: 600px) {
+
+.list {
+	min-height: 100px;
+	overflow: auto;
+}
 }
