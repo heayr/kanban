@@ -46,18 +46,17 @@ a {
 
 
 
-.TaskDetail_wrapper__4o3W2 {
+/* .TaskDetail_wrapper__4o3W2 {
 	display: flex;
 	flex-direction: column;
-	border: 5px solid salmon;
+  height: 100%;
   margin: 22px;
-}
+} */
 
-main.Main_main__yowlL{
+/* main.Main_main__yowlL{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0;
-}
+} */

@@ -3,6 +3,7 @@ import { useRouteMatch, Link } from 'react-router-dom'
 import { LIST_COPY, LIST_COLORS, LIST_TYPES } from '../../config'
 import {formatDate} from '../../utils'
 import css from './TaskDetail.module.css'
+import cross from '../../images/cross.svg'
 
 
 
@@ -37,12 +38,13 @@ const TaskDetail = props => {
 	}
 	return (
 		<div className={css.wrapper}>
-			<Link to='/' className={css.homeLink}>Back</Link>
 
 		{task ? (
 		<>
 			<div className={css.header}>
 				<h2 className={css.title}>{task.title}</h2>
+			<Link to='/' className={css.homeLink}><img className={css.cross} src={cross} alt="cross" /></Link>
+
 				{/* <div className={css.status} style={{background: LIST_COLORS[task.status]}} >{LIST_COPY[task.status]}</div> */}
 			</div>
 			{/* <p className={css.createdAt}>{formatDate(task.created)}</p> */}
