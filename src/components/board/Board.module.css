@@ -1,4 +1,15 @@
 .board {
+
+	height: 100%;
 	display: flex;
-	flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 auto;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* border: solid 1px red; */
+	margin-bottom: 30px;
+
 }

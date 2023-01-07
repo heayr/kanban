@@ -1,0 +1,63 @@
+.profile__menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.profile__menu_wrapper {
+    display: flex;
+}
+
+.profile_background {
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 50px;
+left: -90px;
+/* height: 60px; */
+background-color: white;
+border-radius: 10px;
+z-index: 1;
+transition: ease-in-out 1s;
+
+}
+
+.profile_background_little {
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    top: -5px;
+    left: 105px;
+    z-index: -1;
+}
+
+.profile__avatar {
+
+
+}
+
+.icon {
+
+}
+
+.isopen {
+
+ }
+
+ .profile_btn {
+    width: 135px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    text-align: start;
+    margin-top: 0px;
+    transition: ease-in-out .3s;
+    height: 30px;
+
+ }
+
+ .profile_btn:hover {
+    cursor: pointer;
+    background-color: grey;
+ }

@@ -26,8 +26,6 @@ const Board = props => {
 				const previousTaskList = 
 				tasks.filter(task => task.status === Object.values(LIST_TYPES)[(Object.values(LIST_TYPES).indexOf(type) - 1)]);
 				const previousColumnName = Object.values(LIST_TYPES)[(Object.values(LIST_TYPES).indexOf(type)-1)]
-				console.log('предыдущий таск лист' + previousTaskList);
-				console.log('предыдущая колонка' + previousColumnName);
 
 				return (
 				<List 

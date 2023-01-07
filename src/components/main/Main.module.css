@@ -1,5 +1,12 @@
 .main {
-	background: #ececec;
-	padding: 20px;
-	flex-grow: 1;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100% - 110px);
+    overflow-x: auto;
+    overflow-y: hidden;
+	padding-bottom: 30px;
 }
+
+

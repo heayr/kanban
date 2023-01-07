@@ -18,14 +18,15 @@
 }
 
 .submit {
-	background: #465671;
+	background: #0079BF;
 	color: #fff;
 	border: none;
 	border-radius: 8px;
 	padding: 8px 0;
-	width: 50px;
+	width: 100px;
 	cursor: pointer;
 	align-self: flex-end;
+	transition: ease-in-out .3s;
 }
 
 .submit:hover {

@@ -10,30 +10,21 @@ const List = props => {
 	// как только его поменяем на true с помощью нажатия кнопки, форма будет отображена
 	const [isFormVisible, setFormVisible] = useState(false);
 
+	// when the button or option is clicked - sets useState in FALSE, hiding inputs!!!  
 const handleClick = () => {
 	setFormVisible(!isFormVisible)
 }
 
 const changeStatus = (event, status) => {
 	const taskList = JSON.parse(window.localStorage.getItem('tasks'));
-	const tasksCopy = taskList.map((t) => {
-		if(t.id === event.target.value) {t.status = status}
-		return t
+	
+	const tasksCopy = taskList.map((item) => {
+		if(item.id === event.target.value) {item.status = status}
+		return item
 	});
 	setTasks(tasksCopy);
-	setAddCard(!addCard);
 	setFormVisible(!isFormVisible);
 }
-
-const DropdownList = props => {
-	const {title, type, tasks, addNewTask, setTasks, previousTaskList} = props;
-	const [isListVisible, setListVisible] = useState(false);
-	const handleClick = () => {
-		setListVisible(!isListVisible)
-	}
-}
-
-
 
 	return (
 		
@@ -68,13 +59,16 @@ const DropdownList = props => {
 				<FormAddNewTask addNewTask={addNewTask} setFormVisible={setFormVisible}/>
 			)}
 			{type !== LIST_TYPES.BACKLOG && (
-				<button className={css.addButton} onClick={handleClick} >{isFormVisible ? '- Cancel Form Submition' : '+ Add new card'}</button>
+				<button className={css.addButton} onClick={handleClick} 
+				disabled={Boolean(previousTaskList.length < 1)}
+
+				>{isFormVisible ? '- Cancel Form Submition' : '+ Add new card'}</button>
 			)
 		
 		}
 			{type !== LIST_TYPES.BACKLOG &&  isFormVisible && (
 				<form>
-					<select defaultValue={'default'}
+					<select className='list__selector' defaultValue={'default'}
 					onChange={(e) => changeStatus(e, type) }
 					name="" id="">
 						<option  value={'default'}
@@ -82,14 +76,16 @@ const DropdownList = props => {
 					для того чтобы отрисовать список дел в дропдаун листе, делаем из первого массива, массив - previousTaskList,
 					из него вычитаем -1 - таким образом, получаем новый массив для рендеринга его в дроплисте.
 					*/
-						>Select</option>
+						></option>
 						{
 							previousTaskList.map(task => {
 								return <option
 								className=''
 								key={task.id}
 								value={task.id}
-								>{task.title}</option>
+								onClick={handleClick}
+								>{task.title}
+								</option>
 							})
 						}
 					</select>

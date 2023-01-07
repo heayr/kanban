@@ -2,6 +2,8 @@
 	background: #fff;
 	border-radius: 8px;
 	padding: 20px;
+	width: 92%;
+	height: 100%;
 }
 
 .header {
@@ -11,7 +13,7 @@
 }
 
 .title {
-	margin: 0;
+	margin: 0 0 35px 0;
 }
 
 .createdAt {
@@ -54,4 +56,12 @@
 
 .emptyStateIcon {
 	width: 200px;
+}
+
+.taskDetail__textarea {
+	border: none;
+	width: 60%;
+	height: 40%;
+	resize: none;
+	border-radius: 8px;
 }

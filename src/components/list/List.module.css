@@ -1,11 +1,16 @@
 .list {
-	width: 350px;
-	background: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-sizing: border-box;
-	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 282px;
+    background: #EBECF0;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px;
 	box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
+	overflow: auto;
+	max-height: 100%;
+
 }
 
 .listTitle {
@@ -14,7 +19,9 @@
 
 .task {
 	background: #465671;
-	color: #fff;
+	/* color: #fff; */
+	color: #000;
+
 	margin: 7px 0;
 	padding: 8px;
 	border-radius: 8px;
@@ -31,13 +38,26 @@
 .addButton {
 	background: none;
 	border: none;
+	border-radius: 8px;
 	appearance: none;
-	font-size: 15px;
+	font-size: 18px;
 	color: #737373;
 	margin-top: 15px;
 	cursor: pointer;
+	align-self: flex-start;
+	transition: ease-in-out .3s;
+	height: 30px;
 }
 
 .addButton:hover {
 	color: #000;
+	background-color: white;
+
+}
+
+.addButton[disabled]{
+	background: none;
+	color: #737373;
+	cursor: default;
+
 }
