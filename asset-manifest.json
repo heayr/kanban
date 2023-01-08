@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kanban/static/css/main.105bcf1c.css",
-    "main.js": "/kanban/static/js/main.1eb8a8e9.js",
+    "main.js": "/kanban/static/js/main.0bc26977.js",
     "static/media/avatar.svg": "/kanban/static/media/avatar.b8331654770e5600d8bd7faf2aa79774.svg",
     "static/media/cross.svg": "/kanban/static/media/cross.66e694e962b552330c8106d95a0f685b.svg",
     "index.html": "/kanban/index.html",
@@ -9,10 +9,10 @@
     "static/media/upVector.svg": "/kanban/static/media/upVector.b525214c1154aab855d6.svg",
     "static/media/Rectangle.svg": "/kanban/static/media/Rectangle.9b1e9463a0d58eecb054230cdf46c655.svg",
     "main.105bcf1c.css.map": "/kanban/static/css/main.105bcf1c.css.map",
-    "main.1eb8a8e9.js.map": "/kanban/static/js/main.1eb8a8e9.js.map"
+    "main.0bc26977.js.map": "/kanban/static/js/main.0bc26977.js.map"
   },
   "entrypoints": [
     "static/css/main.105bcf1c.css",
-    "static/js/main.1eb8a8e9.js"
+    "static/js/main.0bc26977.js"
   ]
 }
