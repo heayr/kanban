@@ -43,7 +43,7 @@ const TaskDetail = props => {
 		<>
 			<div className={css.header}>
 				<h2 className={css.title}>{task.title}</h2>
-			<Link to='/' className={css.homeLink}><img className={css.cross} src={cross} alt="cross" /></Link>
+			<Link to='/kanban' className={css.homeLink}><img className={css.cross} src={cross} alt="cross" /></Link>
 
 				{/* <div className={css.status} style={{background: LIST_COLORS[task.status]}} >{LIST_COPY[task.status]}</div> */}
 			</div>
